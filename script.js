@@ -34,4 +34,4 @@ document.addEventListener("DOMContentLoaded", () => {
       headline.style.opacity = 1;
     }, 300);
   }
-});
+  });

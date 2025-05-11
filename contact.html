@@ -5,6 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Kontak Kami</title>
   <link rel="stylesheet" href="style.css" />
+  <script>
+    // Fungsi untuk menampilkan alert saat form dikirim
+    function tampilkanAlert(event) {
+      event.preventDefault(); // Mencegah form reload halaman
+      alert("Pesan Anda telah terkirim");
+      // Di sini kamu bisa menambahkan logika pengiriman form ke server jika diperlukan
+    }
+
+    // Menunggu sampai halaman dimuat sebelum menambahkan event listener
+    window.onload = function() {
+      const form = document.querySelector('.contact-form');
+      form.addEventListener('submit', tampilkanAlert);
+    };
+  </script>
 </head>
 <body>
 
@@ -41,7 +55,7 @@
 
     <div class="contact-extra">
       <p>📞 Hotline: 0800-123-456</p>
-      <p>📍 Lokasi: Jakarta, Indonesia</p>
+      <p>📍 Lokasi: Yogyakarta, Indonesia</p>
       <p>💬 Chat langsung: <a href="https://wa.me/6281234567890" target="_blank">WhatsApp kami</a></p>
     </div>
   </main>
